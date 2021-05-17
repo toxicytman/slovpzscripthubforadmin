@@ -73,7 +73,7 @@ TextButton.Text = "Login"
 TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton.TextSize = 25.000
 TextButton.MouseButton1Down:connect(function()
-	if username.Text == "admin" and password.Text == "frenws76k2334Nwd!2312" then
+	if username.Text == "merazytheadmin" and password.Text == "frenws76k2334Nwd!2312" or username.Text == "slovpz" and password.Text == "szweg324r5u34282345b23412" then
 		LoginFrame.Visible = false
 		HubFrame.Visible = true
 	end
