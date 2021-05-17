@@ -1,0 +1,196 @@
+-- Made by Slovpz
+print("Made by Slovpz")
+local SlvopzHub = Instance.new("ScreenGui")
+local LoginFrame = Instance.new("Frame")
+local Logintitle = Instance.new("TextLabel")
+local username = Instance.new("TextBox")
+local password = Instance.new("TextBox")
+local TextButton = Instance.new("TextButton")
+local HubFrame = Instance.new("Frame")
+local hubtitle = Instance.new("TextLabel")
+local shindolife = Instance.new("TextButton")
+local jailbreak = Instance.new("TextButton")
+local madcity = Instance.new("TextButton")
+local bloxburg = Instance.new("TextButton")
+local counterblox = Instance.new("TextButton")
+local murdermystery = Instance.new("TextButton")
+local arsenal = Instance.new("TextButton")
+
+
+
+SlvopzHub.Name = "SlvopzHub"
+SlvopzHub.Parent = game.CoreGui
+SlvopzHub.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+LoginFrame.Name = "LoginFrame"
+LoginFrame.Parent = SlvopzHub
+LoginFrame.BackgroundColor3 = Color3.fromRGB(96, 96, 96)
+LoginFrame.BorderColor3 = Color3.fromRGB(96, 96, 96)
+LoginFrame.Position = UDim2.new(0.0871428624, 0, 0.502121627, 0)
+LoginFrame.Size = UDim2.new(0, 366, 0, 197)
+LoginFrame.Active = true
+LoginFrame.Draggable = true
+
+Logintitle.Name = "Login title"
+Logintitle.Parent = LoginFrame
+Logintitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Logintitle.BackgroundTransparency = 1.000
+Logintitle.Size = UDim2.new(0, 366, 0, 40)
+Logintitle.Font = Enum.Font.Cartoon
+Logintitle.Text = "Slovpz's Hub"
+Logintitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+Logintitle.TextSize = 38.000
+
+username.Name = "username"
+username.Parent = LoginFrame
+username.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+username.BorderColor3 = Color3.fromRGB(79, 79, 79)
+username.Position = UDim2.new(0.226775959, 0, 0.233502537, 0)
+username.Size = UDim2.new(0, 200, 0, 34)
+username.Font = Enum.Font.Cartoon
+username.Text = "Username"
+username.TextColor3 = Color3.fromRGB(227, 227, 227)
+username.TextSize = 17.000
+
+password.Name = "password"
+password.Parent = LoginFrame
+password.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+password.BorderColor3 = Color3.fromRGB(79, 79, 79)
+password.Position = UDim2.new(0.18306011, 0, 0.467005074, 0)
+password.Size = UDim2.new(0, 241, 0, 31)
+password.Font = Enum.Font.Cartoon
+password.Text = "Password"
+password.TextColor3 = Color3.fromRGB(227, 227, 227)
+password.TextSize = 18.000
+
+TextButton.Parent = LoginFrame
+TextButton.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+TextButton.BorderColor3 = Color3.fromRGB(79, 79, 79)
+TextButton.Position = UDim2.new(0.275956273, 0, 0.690355301, 0)
+TextButton.Size = UDim2.new(0, 172, 0, 40)
+TextButton.Font = Enum.Font.Cartoon
+TextButton.Text = "Login"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextSize = 25.000
+TextButton.MouseButton1Down:connect(function()
+	if username.Text == "admin" and password.Text == "frenws76k2334Nwd!2312" then
+		LoginFrame.Visible = false
+		HubFrame.Visible = true
+	end
+end)
+
+HubFrame.Name = "HubFrame"
+HubFrame.Parent = SlvopzHub
+HubFrame.BackgroundColor3 = Color3.fromRGB(96, 96, 96)
+HubFrame.BorderColor3 = Color3.fromRGB(96, 96, 96)
+HubFrame.Position = UDim2.new(0.0685714707, 0, 0.434229136, 0)
+HubFrame.Size = UDim2.new(0, 419, 0, 274)
+HubFrame.Visible = false
+HubFrame.Active = true
+HubFrame.Draggable = true
+
+hubtitle.Name = "hub title"
+hubtitle.Parent = HubFrame
+hubtitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+hubtitle.BackgroundTransparency = 1.000
+hubtitle.Position = UDim2.new(0.302554041, 0, 0, 0)
+hubtitle.Size = UDim2.new(0, 200, 0, 50)
+hubtitle.Font = Enum.Font.SourceSans
+hubtitle.Text = "Slovpz's Hub"
+hubtitle.TextColor3 = Color3.fromRGB(230, 230, 230)
+hubtitle.TextSize = 46.000
+
+shindolife.Name = "shindolife"
+shindolife.Parent = HubFrame
+shindolife.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+shindolife.BorderColor3 = Color3.fromRGB(96, 96, 96)
+shindolife.Position = UDim2.new(0.0357995257, 0, 0.218978107, 0)
+shindolife.Size = UDim2.new(0, 142, 0, 53)
+shindolife.Font = Enum.Font.Cartoon
+shindolife.Text = "Shindo Life"
+shindolife.TextColor3 = Color3.fromRGB(255, 255, 255)
+shindolife.TextSize = 16.000
+shindolife.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("http://assasine.com/Scripts/Shinobi_Life_2_Autofarm.lua", true))()
+end)
+jailbreak.Name = "jailbreak"
+jailbreak.Parent = HubFrame
+jailbreak.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+jailbreak.BorderColor3 = Color3.fromRGB(96, 96, 96)
+jailbreak.Position = UDim2.new(0.0357995257, 0, 0.445255458, 0)
+jailbreak.Size = UDim2.new(0, 142, 0, 53)
+jailbreak.Font = Enum.Font.Cartoon
+jailbreak.Text = "Jailbreak"
+jailbreak.TextColor3 = Color3.fromRGB(255, 255, 255)
+jailbreak.TextSize = 16.000
+jailbreak.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://bloxhub.xyz/script/loader"))()
+end)
+madcity.Name = "madcity"
+madcity.Parent = HubFrame
+madcity.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+madcity.BorderColor3 = Color3.fromRGB(96, 96, 96)
+madcity.Position = UDim2.new(0.0357995257, 0, 0.675182462, 0)
+madcity.Size = UDim2.new(0, 142, 0, 53)
+madcity.Font = Enum.Font.Cartoon
+madcity.Text = "Mad City"
+madcity.TextColor3 = Color3.fromRGB(255, 255, 255)
+madcity.TextSize = 16.000
+madcity.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://jack1214060.xyz/jayhub",true))()
+end)
+bloxburg.Name = "bloxburg"
+bloxburg.Parent = HubFrame
+bloxburg.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+bloxburg.BorderColor3 = Color3.fromRGB(96, 96, 96)
+bloxburg.Position = UDim2.new(0.408114582, 0, 0.218978077, 0)
+bloxburg.Size = UDim2.new(0, 142, 0, 53)
+bloxburg.Font = Enum.Font.Cartoon
+bloxburg.Text = "Bloxburg"
+bloxburg.TextColor3 = Color3.fromRGB(255, 255, 255)
+bloxburg.TextSize = 16.000
+bloxburg.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init'), true))()
+end)
+
+counterblox.Name = "counterblox"
+counterblox.Parent = HubFrame
+counterblox.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+counterblox.BorderColor3 = Color3.fromRGB(96, 96, 96)
+counterblox.Position = UDim2.new(0.408114582, 0, 0.445255458, 0)
+counterblox.Size = UDim2.new(0, 142, 0, 53)
+counterblox.Font = Enum.Font.Cartoon
+counterblox.Text = "Counter Blox"
+counterblox.TextColor3 = Color3.fromRGB(255, 255, 255)
+counterblox.TextSize = 16.000
+counterblox.MouseButton1Down:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/venosu/Hex-Hub/main/hexhub.lua'))()
+end)
+
+
+murdermystery.Name = "murdermystery"
+murdermystery.Parent = HubFrame
+murdermystery.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+murdermystery.BorderColor3 = Color3.fromRGB(96, 96, 96)
+murdermystery.Position = UDim2.new(0.408114582, 0, 0.675182462, 0)
+murdermystery.Size = UDim2.new(0, 142, 0, 53)
+murdermystery.Font = Enum.Font.Cartoon
+murdermystery.Text = "Murder Mystery"
+murdermystery.TextColor3 = Color3.fromRGB(255, 255, 255)
+murdermystery.TextSize = 16.000
+murdermystery.MouseButton1Down:connect(function()
+loadstring(game:GetObjects("rbxassetid://4001118261")[1].Source)()
+end)
+arsenal.Name = "arsenal"
+arsenal.Parent = HubFrame
+arsenal.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+arsenal.BorderColor3 = Color3.fromRGB(96, 96, 96)
+arsenal.Position = UDim2.new(0.778042972, 0, 0.218978107, 0)
+arsenal.Size = UDim2.new(0, 86, 0, 178)
+arsenal.Font = Enum.Font.Cartoon
+arsenal.Text = "Arsenal"
+arsenal.TextColor3 = Color3.fromRGB(255, 255, 255)
+arsenal.TextSize = 16.000
+arsenal.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init'), true))()
+end)
